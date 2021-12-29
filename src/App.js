@@ -19,8 +19,7 @@ function App() {
       {code && 
       <ScriptTag type="text/javascript">
         {
-        `var a=12;
-        $( document ).ready(function() {
+        `$( document ).ready(function() {
         ${code.jqueryCode}
         });
         function runJSCode(){${code.jsCode}}`
